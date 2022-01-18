@@ -31,10 +31,8 @@ $(document).ready(function () {
             processData: false,
             async: true,
             success: function (data) {
-                $('.loader').hide();
                 $('#result').fadeIn(600);
                 $('#result').text(' Result:  ' + data);
-                console.log('Success!');
             },
         });
     });
